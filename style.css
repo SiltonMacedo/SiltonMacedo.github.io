@@ -9,7 +9,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Kalam', cursive;
-    color: var(--azul);
 }
 
 body {
@@ -32,6 +31,21 @@ main {
     margin: auto;
     display: grid;
     gap: 24px;
+    color: var(--azul);
+
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 24px;
+    flex-wrap: wrap;
+}
+
+#centra {
+    display: grid;
+    justify-items: center;
 }
 
 a {
@@ -144,3 +158,31 @@ section.brilho:nth-child(4) {
     animation-delay: .9s;
 }
 
+/* ------------------CAIXA DE INFORMAÇÃO-----------------------*/
+    .infobox {
+        text-align: center;
+        color: rgb(193, 221, 247);
+        margin: 0 10px;
+    }
+
+    .infobox > .icone{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .infobox > .icone > img {
+        width: 80px;
+    }
+
+    .titulo {
+        width: 100%;
+        display: block;
+        box-sizing: inherit;
+    }
+
+    .titulo > h2{
+        margin: 10px 0px;
+        font-weight: lighter;
+        font-size: 1.2em;
+    }
+/* ------------------CAIXA DE INFORMAÇÃO-----------------------*/
