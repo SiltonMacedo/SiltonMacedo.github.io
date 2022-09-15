@@ -165,7 +165,7 @@ section.brilho:nth-child(4) {
         margin: 0 10px;
     }
 
-    .infobox a {
+    li > a {
         text-decoration: none;
     }
 
