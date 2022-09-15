@@ -3,7 +3,7 @@
 
 * {
     --azul: rgb(127, 236, 255);
-    --pretofosco: #081010;
+    --pretofosco: black;
     --cartao: #2A2634;
     margin: 0;
     padding: 0;
@@ -34,14 +34,28 @@ main {
     gap: 24px;
 }
 
+a {
+    transition: transform .3s;
+}
+
+a:hover {
+    transform: scale(1.2);    
+}
 
 #foto {
     padding-top: 40px;
-    width: 200px;
+    width: 140px;
+    animation: deCima .7s .2s backwards;
+    transition: transform .3s;
+}
+
+#foto:hover {
+    transform: scale(1.1);
 }
 
 #nome {
     width: 400px;
+    animation: deBaixo .7s .2s backwards;
 }
 
 .brilho {
@@ -74,3 +88,59 @@ main {
 p {
     text-align: justify;
 }
+
+/* ANIMAÇÕES ...................................................*/
+@keyframes deCima {
+    from { 
+        opacity: 0;
+        transform: translateY(-30px); 
+    }
+    to { 
+        opacity: 1;
+        transform: translateY(0); 
+    }
+}
+
+@keyframes deBaixo {
+    from { 
+        opacity: 0;
+        transform: translateY(30px); 
+    }
+    to { 
+        opacity: 1;
+        transform: translateY(0); 
+    }
+}
+
+@keyframes deLado {
+    from { 
+        opacity: 0;
+        transform: translateX(-50px); 
+    }
+    to { 
+        opacity: 1;
+        transform: translateX(0); 
+    }
+}
+
+
+section.brilho {
+    animation: deLado .7s backwards;
+}
+
+section.brilho:nth-child(1) {
+    animation-delay: 0;
+}
+
+section.brilho:nth-child(2) {
+    animation-delay: .3s;
+}
+
+section.brilho:nth-child(3) {
+    animation-delay: .6s;
+}
+
+section.brilho:nth-child(4) {
+    animation-delay: .9s;
+}
+
