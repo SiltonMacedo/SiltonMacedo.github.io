@@ -165,6 +165,10 @@ section.brilho:nth-child(4) {
         margin: 0 10px;
     }
 
+    .infobox a {
+        text-decoration: none;
+    }
+
     .infobox > .icone{
         width: 100%;
         margin-bottom: 20px;
