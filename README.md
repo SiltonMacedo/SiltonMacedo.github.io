@@ -1,6 +1,6 @@
 # Silton Macedo - Página Principal
 
-[Preview](./.github/tela.png)
+![Preview](./.github/tela.png)
 
  > Portfólio de Estudo HTML & CSS
 
